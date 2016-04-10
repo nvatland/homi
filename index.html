@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homi</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+<div class="phonecontain">
+	<nav class="navbar flex">
+		<div id="nav-menu-btn"><img src="images/menu.svg" class="svg" alt="" ></div>
+		<h1 id="nav_title">Timeline</h1>
+		<div id="chat-btn" data-location="messages"><img src="images/chat.svg" alt=""></div>
+		<div class="overlay hidden"></div>
+		<div class="navigation hidden">
+			<div id="close"><img src="images/close.svg" class="svg" alt=""></div>
+			<img src="images/logo.png" alt="" id="nav-logo">
+			<div class="nav-links">
+				<a href="#" class="flex" data-location="timeline" id="nav-timeline">
+					<div><img src="images/home.svg" class="svg" alt=""></div>
+					<p>Home</p>
+				</a>
+				<a href="#" class="flex" data-location="search" id="nav-search">
+					<div><img src="images/search.svg" class="svg" alt=""></div>
+					<p>Search</p>
+				</a>
+				<a href="#" class="flex" data-location="profile" id="nav-profile">
+					<div><img src="images/profile.svg" class="svg" alt=""></div>
+					<p>Profile</p>
+				</a>
+				<a href="#" class="flex" data-location="login" id="nav-login">
+					<div><img src="images/logout.svg" class="svg" alt=""></div>
+					<p>Log Out</p>
+				</a>
+			</div>
+		</div>
+	</nav>
+	<!-- LOG IN --> 
+	<section class="flex flex-col" id="login" style="display: none;">
+		<img src="images/logo.png" alt="" class="logo">
+		<div class="input-group flex flex-col">
+			<input type="email" class="input">
+			<label for="email">Email</label>
+		</div>
+		<div class="input-group flex flex-col">
+			<input type="password" class="input">
+			<label for="password">Password</label>
+		</div>
+		<button class="btn btn-click" data-location="timeline">Submit</button>
+		<a href="#" data-location="signup" id="signup_link">Sign Up</a>
+	</section>
+	<!-- SIGN UP -->
+	<section class="flex flex-col" id="signup" style="display: none;">
+		<img src="images/logo.png" alt="" class="logo">
+		<div class="input-group flex flex-col">
+			<input type="email" class="input">
+			<label for="email">Email</label>
+		</div>
+		<div class="input-group flex flex-col">
+			<input type="name" class="input">
+			<label for="name">Name</label>
+		</div>
+		<div class="input-group flex flex-col">
+			<input type="password" class="input">
+			<label for="password">Password</label>
+		</div>
+		<div class="input-group flex flex-col">
+			<input type="password" class="input">
+			<label for="password">Password</label>
+		</div>
+		<button class="btn btn-click" data-location="timeline">Sign Up</button>
+		<a href="#" data-location="login" id="signin_link">Sign In</a>
+	</section>
+	<!-- TIMELINE -->
+	<section id="timeline">
+		<div class="timeline-contain">
+			<a href="#" data-location="question-1" class="question-contain flex flex-col qlarge">
+				<div class="flex question qlarge">
+					<div class="question-user-picture">
+						<img src="images/user/1.jpg" alt="">
+					</div>
+					<div class="question-data flex flex-col">
+						<h3 class="question-data__name">Kenneth Gonzalez</h3>
+						<h2 class="question-data__question">Question Title Here</h2>
+						<p>Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. Meggings cred before they sold...</p>
+						<div class="question-data-count flex">
+							<div class="likes flex">
+								<img src="images/like.svg" class="svg" alt="">
+								<p>4</p>
+							</div>
+							<div class="replies flex">
+								<img src="images/reply.svg" class="svg" alt="">
+								<p>2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="#" data-location="question-1" class="question-contain flex flex-col qlarge">
+				<div class="flex question qlarge">
+					<div class="question-user-picture">
+						<img src="images/user/2.jpg" alt="">
+					</div>
+					<div class="question-data flex flex-col">
+						<h3 class="question-data__name">Donna Wallace</h3>
+						<h2 class="question-data__question">Question Title Here</h2>
+						<p>Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. Meggings cred before they sold...</p>
+						<div class="question-data-count flex">
+							<div class="likes flex">
+								<img src="images/like.svg" class="svg" alt="">
+								<p>1</p>
+							</div>
+							<div class="replies flex">
+								<img src="images/reply.svg" class="svg" alt="">
+								<p>3</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			
+			<a href="#" data-location="question-1" class="question-contain flex flex-col qlarge">
+				<div class="flex question qlarge">
+					<div class="question-user-picture">
+						<img src="images/user/3.png" alt="">
+					</div>
+					<div class="question-data flex flex-col">
+						<h3 class="question-data__name">Gregory Fields</h3>
+						<h2 class="question-data__question">Question Title Here</h2>
+						<p>Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. Meggings cred before they sold...</p>
+						<div class="question-data-count flex">
+							<div class="likes flex">
+								<img src="images/like.svg" class="svg" alt="">
+								<p>3</p>
+							</div>
+							<div class="replies flex">
+								<img src="images/reply.svg" class="svg" alt="">
+								<p>1</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			
+			<a href="#" data-location="question-1" class="question-contain flex flex-col qlarge">
+				<div class="flex question qlarge">
+					<div class="question-user-picture">
+						<img src="images/user/5.jpg" alt="">
+					</div>
+					<div class="question-data flex flex-col">
+						<h3 class="question-data__name">Jean Richards</h3>
+						<h2 class="question-data__question">Question Title Here</h2>
+						<p>Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. Meggings cred before they sold...</p>
+						<div class="question-data-count flex">
+							<div class="likes flex">
+								<img src="images/like.svg" class="svg" alt="">
+								<p>1</p>
+							</div>
+							<div class="replies flex">
+								<img src="images/reply.svg" class="svg" alt="">
+								<p>0</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="#" data-location="question-1" class="question-contain flex flex-col qlarge">
+				<div class="flex question qlarge">
+					<div class="question-user-picture">
+						<img src="images/user/7.jpg" alt="">
+					</div>
+					<div class="question-data flex flex-col">
+						<h3 class="question-data__name">Andrea Woods</h3>
+						<h2 class="question-data__question">Question Title Here</h2>
+						<p>Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. Meggings cred before they sold...</p>
+						<div class="question-data-count flex">
+							<div class="likes flex">
+								<img src="images/like.svg" class="svg" alt="">
+								<p>4</p>
+							</div>
+							<div class="replies flex">
+								<img src="images/reply.svg" class="svg" alt="">
+								<p>2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div id="newquestion" class="flex">+</div>
+		<div class="timeline-bottom"></div>
+	</section>
+	<!-- PROFILE -->
+	<section id="profile" style="display: none;">
+		<div class="profile-banner"></div>
+		<div class="profile-picture"><img src="images/user/1s.png" alt=""></div>
+		<div class="flex flex-col profile-name">
+			<h1>Kenneth Gonzalez</h1>
+			<h4>Title at Company</h4>
+			<div class="flex location">
+				<div class="flex location-from profile-stuff">
+					<p>From:</p>
+					<h5>San Francisco, CA</h5>
+				</div>
+				<div class="flex location-current profile-stuff">
+					<p>Currently In:</p>
+					<h5>Fresno, CA</h5>
+				</div>
+			</div>
+		</div>
+		<div class="atcarl">
+			<div class="brownbar flex brownbar-life">
+				<div class="prof-svg-contain"><img src="images/carleton.svg" class="svg" alt=""></div>
+				<h2>At Carleton</h2>
+			</div>
+			<div class="profile-stuff bbps flex">
+				<p>Major:</p>
+				<h5>Biology '14</h5>
+			</div>
+			<div class="profile-stuff bbps flex">
+				<p>Groups:</p>
+				<h5>Biology, Biology, Biology, Biology</h5>
+			</div>
+			<div class="brownbar flex">
+				<div class="prof-svg-contain"><img src="images/badges.svg" class="svg" alt=""></div>
+				<h2>Badges</h2>
+			</div>
+			<div class="badges flex">
+				<div class="badge"><img src="images/badge1.png" alt=""></div>
+				<div class="emptybadge badge"></div>
+				<div class="emptybadge badge"></div>
+				<div class="emptybadge badge"></div>
+			</div>
+			<div class="brownbar flex">
+				<div class="prof-svg-contain"><img src="images/bio.svg" class="svg" alt=""></div>
+				<h2>Bio</h2>
+			</div>
+			<div class="bio">
+				<p>
+					Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter banh mi, squid keffiyeh High Life Brooklyn twee craft beer tousled chillwave. PBR&amp;B selfies chillwave, bespoke tote bag blog post-ironic. Single-origin coffee put a bird on it craft beer YOLO, Portland hella deep v Schlitz. Tumblr Bushwick post-ironic Thundercats. Vinyl 90's keytar, literally cardigan Williamsburg YOLO squid pickled Etsy salvia lo-fi locavore. Meh leggings retro narwhal Neutra.
+				</p>
+			</div>
+			<div class="brownbar flex">
+				<div class="prof-svg-contain"><img src="images/life.svg" class="svg" alt=""></div>
+				<h2>Work Experience</h2>
+			</div>
+			<div class="work">
+				<div class="profile-stuff bbwe flex">
+					<p>Title:</p>
+					<h5>Title of Position</h5>
+				</div>
+				<div class="profile-stuff bbwe flex">
+					<p>Company:</p>
+					<h5>Name of Company</h5>
+				</div>
+				<div class="brownline"></div>
+				<div class="profile-stuff bbwe flex">
+					<p>Title:</p>
+					<h5>Title of Position</h5>
+				</div>
+				<div class="profile-stuff bbwe flex">
+					<p>Company:</p>
+					<h5>Name of Company</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- QUESTION 1 -->
+	<section id="question-1">
+		<div class="responses">
+			<div class="flex question qlarge">
+				<div class="question-user-picture qlarge">
+					<img src="images/user/1.jpg" alt="">
+				</div>
+				<div class="question-data flex flex-col">
+					<h3 class="question-data__name">Kenneth Gonzalez</h3>
+					<h2 class="question-data__question">Question Title Here</h2>
+					<p>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.</p>
+					<div class="question-data-count flex">
+						<div class="likes flex">
+							<img src="images/like.svg" class="svg" alt="">
+							<p>4</p>
+						</div>
+						<div class="replies flex">
+							<img src="images/reply.svg" class="svg" alt="">
+							<p>2</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex question qlarge reply">
+				<div class="question-user-picture qlarge">
+					<img src="images/user/4.jpg" alt="">
+				</div>
+				<div class="question-data flex flex-col">
+					<h3 class="question-data__name">Ashley Simmons</h3>
+					<p>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. </p>
+					<div class="question-data-count flex">
+						<div class="likes flex">
+							<img src="images/like.svg" class="svg" alt="">
+							<p>1</p>
+						</div>
+						<div class="replies flex">
+							<img src="images/reply.svg" class="svg" alt="">
+							<p>0</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex question qlarge reply">
+				<div class="question-user-picture qlarge">
+					<img src="images/user/3.png" alt="">
+				</div>
+				<div class="question-data flex flex-col">
+					<h3 class="question-data__name">Gregory Fields</h3>
+					<p>The monkey-rope is found in all whalers; but it was only in the Pequod that the monkey and his holder were ever tied together. This improvement upon the original usage was introduced by no less a man than Stubb, in order to afford the imperilled harpooneer the strongest possible guarantee for the faithfulness and vigilance of his monkey-rope holder.</p>
+					<div class="question-data-count flex">
+						<div class="likes flex">
+							<img src="images/like.svg" class="svg" alt="">
+							<p>1</p>
+						</div>
+						<div class="replies flex">
+							<img src="images/reply.svg" class="svg" alt="">
+							<p>0</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="reply-box flex">
+			<textarea name="" id="replytext" cols="30" rows="10" placeholder="Type your response...."></textarea>
+			<button class="reply-btn" id="reply">Reply</button>
+		</div>
+		<div class="bottom-filler"></div>
+	</section>
+	<section class="flex flex-col" id="newquestionbox">
+		<div class="header">
+			<h2>Ask a question</h2>
+			<div class="close"><img src="images/close.svg" class="svg" alt=""></div>
+		</div>
+		<div class="input-group flex flex-col">
+			<input type="text" class="input" id="questioninput">
+			<label for="email">What is your question?</label>
+		</div>
+		<div class="input-group flex flex-col">
+			<input type="text" class="input">
+			<label for="email">Tags <small>(please separate by commas)</small></label>
+		</div>
+		<div class="input-group flex flex-col">
+			<textarea class="input" id="questiontextbox"></textarea>
+			<label for="email">More details</label>
+		</div>
+		<button class="btn" id="ask">Ask</button>
+	</section>
+	<section id="search">
+		<div class="search-area">
+			<input type="text" class="searchbar" placeholder="Search...">
+		</div>
+		<div class="search-results flex flex-col">
+			<div class="result flex-col">
+				<h2>Question Title</h2>
+				<p>Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. Meggings cred before they sold...</p>
+			</div>
+			<div class="result flex-col">
+				<h2>Question Title</h2>
+				<p>Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. Meggings cred before they sold...</p>
+			</div>
+			<div class="result" id="kenneth" data-location="profile">
+				<img src="images/user/1.jpg" alt="">
+				<div class="flex-col result-name">
+					<h2>Kenneth Gonzalez</h2>
+					<p>Biology '14</p>
+				</div>
+			</div>
+			<div class="result">
+				<img src="images/user/2.jpg" alt="">
+				<div class="flex-col result-name">
+					<h2>Donna Wallace</h2>
+					<p>Biology '14</p>
+				</div>
+			</div>
+			<div class="result">
+				<img src="images/target.png" alt="">
+				<div class="flex-col result-name">
+					<h2>Target</h2>
+					<p>Find job postings</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="messages">
+		<div class="messagescontain flex flex-col">
+			<div class="result newmessage" data-location="indivmessage">
+				<div class="chatimage"><img src="images/user/chat1.png" alt=""><div class="unread"></div></div>
+				<div class="flex-col result-name">
+					<h2>Kenneth Gonzalez</h2>
+					<p>Cheesecake toffee chocolate cake bear claw. Candy jujubes powder marshmallow tart.</p>
+				</div>
+			</div>
+			<div class="result newmessage" data-location="indivmessage">
+				<div class="chatimage"><img src="images/user/chat2.png" alt=""><div class="unread"></div></div>
+				<div class="flex-col result-name">
+					<h2>Martha Wood</h2>
+					<p>Pudding cookie candy canes. Powder ice cream jelly-o chocolate cake. Chupa chups bear claw candy canes caramels liquorice chupa chups.</p>
+				</div>
+			</div>
+			<div class="result newmessage" data-location="indivmessage">
+				<div class="chatimage"><img src="images/user/chat3.png" alt=""></div>
+				<div class="flex-col result-name">
+					<h2>Diane Owens</h2>
+					<p>I love sesame snaps lemon drops apple pie jelly-o halvah fruitcake jelly. </p>
+				</div>
+			</div>
+			<div class="result newmessage" data-location="indivmessage">
+				<div class="chatimage"><img src="images/user/chat4.png" alt=""></div>
+				<div class="flex-col result-name">
+					<h2>Brandon Rodriguez</h2>
+					<p>Gingerbread cotton candy liquorice chocolate cake cheesecake cake croissant. Danish pudding carrot cake I love brownie. I love icing candy candy canes wafer.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="indivmessage">
+		<div class="messagescontain flex flex-col">
+			<div class="received flex">
+				<img src="images/user/chat1.png" alt="">
+				<div class="rec-mes">Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. Meggings cred before they sold...</div>
+			</div>
+			<div class="sent">
+				I have hinted that I would often jerk poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive.
+			</div>
+			<div class="received flex">
+				<img src="images/user/chat1.png" alt="">
+				<div class="rec-mes">Cheesecake toffee chocolate cake bear claw. Candy jujubes powder marshmallow tart.</div>
+			</div>
+		</div>
+		<div class="reply-box flex">
+			<textarea name="" id="messagearea" cols="30" rows="10" placeholder="Type your response...."></textarea>
+			<button class="reply-btn" id="sendmessage">Send</button>
+		</div>
+		<div class="bottom-filler"></div>
+	</section>
+</div>
+</body>
+</html>
